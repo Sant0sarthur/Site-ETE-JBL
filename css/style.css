@@ -1,0 +1,76 @@
+
+.col-md-8 nav ol a{
+	float: left;
+	padding: 20px;
+	text-decoration: none;
+}
+.col-md-8 nav ol a:hover {
+	background: silver;
+	
+}
+#conteudo {
+	padding: 10px;
+	text-align: center;
+}
+.col-md-4 {
+	background-color: #A9A9A9;
+	text-align: center;
+
+}
+
+     .navbar {       /* CSS - Barra de Navegação */
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #A9A9A9;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 2px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: DimGrey !important;
+  }
+  .navbar-nav li a:hover {  /* Mouse - Quando passar em cima dos links vai aparecer a cor Preta */
+    color: black !important;
+  }
+   #ho:hover{
+	  background:LemonChiffon;
+  }
+   #he:hover{
+	  background:PaleGreen;
+  }
+   #hi:hover{
+	  background:Salmon;
+  } 
+  .navbar-nav li.active a { 
+    color: black !important;
+
+  }
+  .navbar-default .navbar-toggle { /* Exterior Barra de Navegação*/
+    border-color: transparent;
+  }
+   
+   .wrapper .container_Banner {
+     width: 100%;
+   }
+   .container_Banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 261px;
+    margin-bottom: 10px;
+    position: relative;
+   }
+   
+
+   .container_Banner h1 {
+       width: 290px;
+       font-size: 40px;
+       position: absolute;
+       bottom: 10px;
+       left: 20;
+   }
+
+#bx-duvidas .bx h3 {
+  display: block;
+  width: 100%
+  

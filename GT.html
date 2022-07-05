@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Guia de Turismo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS - Link de referência -->
+	<link rel="stylesheet" type="text/css" href="css/tye.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/min.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Script-->
+    <script src="js/lool.js"></script>
+    <script src="js/set.js"></script>
+	<link rel="shortcut icon" href="_imagens\turismo.jpg" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function(){
+
+jQuery("#subirTopo").hide();
+
+jQuery('a#subirTopo').click(function () {
+         jQuery('body,html').animate({
+           scrollTop: 0
+         }, 800);
+        return false;
+   });
+
+jQuery(window).scroll(function () {
+         if (jQuery(this).scrollTop() > 1000) {
+            jQuery('#subirTopo').fadeIn();
+         } else {
+            jQuery('#subirTopo').fadeOut();
+         }
+     });
+});
+</script>
+	<style>
+		.lo{
+		width: 100%;
+		height:650px;
+		background-image: url(_imagens/fundoGT.jpeg);
+		background-size: cover;
+	
+		}	
+		.pa{
+		width: 70%;
+		height:1200px;
+		background-image: url(_imagens/fundo.jpeg);
+		background-size: cover;	
+		border-radius:20px;
+		}
+		.pe{
+		margin: 0 auto;
+		width:90%;
+		}
+		.pi{
+		margin: 0 auto;
+		width:70%;
+		}
+		.bt {
+border:1px solid #25692A;
+border-radius:4px;
+display:inline-block;
+cursor:pointer;
+font-family:Verdana;
+font-weight:bold;
+font-size:13px;
+padding:6px 10px;
+text-decoration:none;
+border-color:#blue;
+background:blue;
+box-shadow:inset 0px 1px 0px 0px #e3f1e3;
+color:#fff;
+text-shadow:0px 1px 0px #528009;
+}
+	hr{border:1px solid black;}
+		.titulo{text-align:center;
+				color:red;
+				font-family:segoe script;
+		}
+		.ol li{text-decoration:none;
+				list-style:none;
+				display:inline;
+				padding:20px;}
+		#subirTopo {
+text-decoration: none;
+background: rgba(30,156,161,.9);
+bottom: 30px;
+right: 30px;
+color: #fff;
+text-align: center;
+cursor: pointer;
+padding: 15px;
+font-size: 15px;
+font-weight: bold;
+text-transform: uppercase;
+position: fixed;
+border: 0;
+font-family: sans-serif;
+opacity: .8;
+}
+
+#subirTopo:hover {
+opacity:1;
+}
+	</style> 
+</head>
+<body>
+  <header>
+   <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+        </button>
+		<UL class="nav navbar-nav navbar-right">
+		<LI><IMG SRC="_imagens/ETE3.PNG" height="43px" width="50px" align="left"></LI>
+		</UL>
+        <a class="navbar-brand" href="index.html">ETE JBL </a>  <!-- Nome do Web Site -->
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" bg-color="black"> 
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html"id="ho">HOME</a></li>  <!-- Link Home-->
+        <li><a href="Eventos.html"id="he">EVENTOS</a></li> <!-- Link de Eventos -->
+        <li><a href="Jornal.html"id="hi">JORNAL "O FATO SOCIAL</a></li> <!-- Link do Jornal -->
+        <li><a href="Fale Conosco.html"id="ho">FALE CONOSCO</a></li>  <!-- Link Fale Conosco -->
+     
+		<li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"id="he">CURSOS  <!-- Guia de CURSOS-->
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="ds.html" id="hi">DESENVOLVIMENTO DE SISTEMAS</a></li>   <!-- Link de dropdown-menu de ds-->
+            <li><a href="gt.html"id="ho">GUIA DE TURISMO</a></li>  <!-- Link de dropdown-menu de gt-->
+			<li><a href="sub.html"id="he">ADMINISTRAÇÃO</a></li>  <!-- Link de dropdown-menu de gt-->
+            </ul>
+     </li>
+		   <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="hi">MAIS  <!-- Guia de Opções-->
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="Projetos.html" id="ho">PROJETOS</a></li>   <!-- Link de dropdown-menu de Mais-->
+            <li><a href="Laboratórios.html"id="he">LABORATÓRIOS</a></li>
+			<li><a href="Sobre nossa Escola.html"id="hi">SOBRE NOSSA ESCOLA</a></li> <!-- Link de dropdown-menu de Mais-->
+			<li><a href="bib.html" id="ho">BIBLIOTECA</a></li>
+			<li><a href="https://www.instagram.com/gremioelitejbl/?hl=pt-br" id="he">GRÊMIO</a></li>   <!-- Link de dropdown-menu de Mais-->
+			<li><a href="http://www.siepe.educacao.pe.gov.br/ator/alunos" id="hi">  AREA DO ALUNO </a></li> <!--  Link de dropdown-menu de Mais-->
+			<li><a href="http://www.siepe.educacao.pe.gov.br/ator/educadores" id="ho">  AREA DO EDUCADOR </a></li> <!--  Link de dropdown-menu de Mais-->
+            </ul>
+        </li>
+          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>  <!-- Icone de Pesquisa-->
+          </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+
+<div class="lo">
+<br><br><br><br><br><br><br><br>
+<h1 align="center" style="font-family:Modack,cursive;color:white; font-size:55px; text-shadow: 5px 5px 5px blue" > TÉCNICO EM GUIA DE TURISMO</h1>
+<br>
+<div class="ki">
+<p align="center" style="color:white;font-size:15px;"><b> <img src="_imagens/relogio.png" style="width=20px; height:20px;"> 2000 horas <img src="_imagens/chapeu.png" style="width=25px; height:25px;"> Graduação Turística <img src="_imagens/globo.png" style="width=35px; height:35px;"> Turismo Pernambucano</b></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<form action="Fale Conosco.html">
+    <input class="bt" type="submit" value="Como entrar?" />
+<form action="https://sisacad.educacao.pe.gov.br/sissel/">
+    <input class="bt" type="submit" value="Se inscrever" />
+</center>
+</div>
+</div>
+<br><br>
+
+</center>
+<center>
+
+<div class="pa">
+<div class="pe">
+</form></form>
+<br><br><br><br><br><br><br>
+<h2 class="titulo" style="color:white;text-shadow: 5px 5px 5px red;"><b> O QUE É O TÉCNICO EM GUIA DE TURISMO?<b> </h2>
+<p align="justify" style="font-size:16px;color:white;font-family:Bradley Hand; text-shadow: 3px 3px 3px BLACK;"><B>É o profissional encarregado de acompanhar, orientar e transmitir informações históricas e culturais a grupos de pessoas que visitam um determinado local. É através do guia de turismo, que os turistas não só conhecem os lugares, mas entendem a sua história e a sua cultura, modo de viver e costumes. é responsável por: Orientar, promover, embarque e desembarque, Organizar o cronograma de atividades, socorrer ou solicitar ocorrências, com acesso gratuito a museus, galerias de arte, exposições, feiras, bibliotecas e pontos de interesse turístico, quando estiver conduzindo, ou não pessoas ou grupos, observadas as normas e horários de cada estabelecimento, desde que devidamente credenciado como guia de turismo pela EMBRATUR.
+</B></p>
+<br>
+</DIV>
+<div class="pi">
+<h2 style="color:yellow;font-family:Arial,Times New Romam;text-shadow: 5px 5px 5px black;"><b> Áreas Relacionadas </b></h2>
+<p style="color:white; font-family:Andale Mono; font-size:16px; text-shadow: 3px 3px 3px BLACK;" ><b>O Técnico em Guia de Turismo por ser o profissional responsável por orientar e conduzir pessoas ou grupos durante traslados, passeios, visitas e viagens se relaciona com a área Turística e Hoteleira.</b></p>
+
+<h2 style="color:yellow;font-family:Arial,Times New Romam; text-shadow: 3px 3px 3px black;"><b> Responsabilidades após o término do curso </b></h2>
+ 
+<BR><BR><BR><BR>
+
+<p style="color:white; font-family:Andale Mono; font-size:16px; text-shadow: 5px 5px 5px BLACK;"><b>Está sob as responsabilidades de um Técnico em Guia de Turismo apresentar aos visitantes opções de roteiros e itinerários turísticos disponíveis e, utilizar instrumentos de comunicação, localização, técnicas de condução, de interpretação ambiental e cultural, orientar e conduzir pessoas ou grupos durante traslados, passeios, visitas, viagens, com ética profissional e respeito ao ambiente, à cultura e à legislação.</b></P>
+
+</div>
+</DIV>
+</center>
+<br>
+<hr style="width:80%;">
+
+<center>
+<div style="width:80%; border-left: 4px solid #191970; border-right:4px solid #191970; border-radius:10px;">
+<br><br>
+<h1><b>Pontos Turísticos</b></h1>
+<hr style="width:30%; margin:0px;">
+<h2><b> Visitas Técnicas</b></h2>
+<p style="font-size:20px;">Para o curso de Guia de Turismo as visitas técnicas são de extrema importância, pois o material de <br>trabalho de um guia é a rua, os monumentos e os museus. Os alunos do <br>curso fazem visitas que contemplem o assunto que estiver sendo estudado na unidade. 
+Os alunos tem a oportunidade de visitar lugares <br>importantes para o estado de Pernambuco, e ainda podem ver o trabalho diário de um guia de Turismo </p>
+<hr style="width:30%;">
+<h2> <b>Importância das visitas aos pontos turísticos </b></h2>
+<p style="font-size:20px;">As visitas técnicas são de extrema importância pois estimulam a prática do que é aprendido em sala de aula.<br>
+Nas visitas os alunos tem a oportunidade de ver profissionais da área e conhecer mais sobre a profissão.</p>
+</div>
+<hr style="width:30%;"> <br> <br>
+<h2> PONTOS VISITADOS EM RECIFE </h2>
+<hr style="width:10%;">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores-->
+        <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="3" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="4" class="active"></li>
+        </ol>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+        <div class="item active">
+        <img class="d-block w-100" src="_imagens/turis.jpeg" alt="First slide"; style="width: 70%; height:800px;">
+              <div class="carousel-item">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Recife</h3>
+                      <p>Praça do Marco Zero.<br> Vista para o Parque das Esculturas Francisco Brennand</p>
+                  </div>
+              </div>
+        </div>
+
+        <div class="item">
+        <img class="d-block w-100" src="_imagens/turis9.jpeg" alt="Second slide"; style="width: 70%;height: 800px;">
+        <div class="carousel-item">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Recife</h3>
+                      <p>Praia do Pina.</p>
+                  </div>
+              </div>
+        </div>
+
+        <div class="item">
+        <img class="d-block w-100" src="_imagens/turis12.jpeg" alt="Third slide"; style="width:70%;height: 800px;">
+          <div class="carousel-item">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Recife</h3>
+                      <p>Praia do Pina. <br>Estudante: <a href="https://www.instagram.com/emyycabral/?hl=pt-br" style="text-decoration:none;">Emily Cabral</a></p>
+                  </div>
+              </div>
+        </div>
+		<div class="item">
+        <img class="d-block w-100" src="_imagens/turis8.jpeg" alt="Four slide"; style="width: 70%;height: 650px;">
+        <div class="carousel-item">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Recife</h3>
+                      <p>Caís do Sertão. <br>Estudante: <a href="https://www.instagram.com/raquelcbaraujo/?hl=pt-br" style="text-decoration:none;">Raquel Araújo</a></p>
+                  </div>
+              </div>
+        </div>
+		<div class="item">
+        <img class="d-block w-100" src="_imagens/turis5.jpeg" alt="Five slide"; style="width: 70%;height: 650px;">
+        <div class="carousel-item">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Recife</h3>
+                      <p>Paço do Frevo.</p>
+                  </div>
+              </div>
+        </div>
+        </div>
+
+        <!-- Controle Direita e Esquerda -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+        </a>
+        
+</div>
+<hr style="width:80%;">
+
+<div style="width:80%; border-left: 4px solid #191970; border-right:4px solid #191970; border-radius:10px;">
+<br><br>
+<h1><b>Guia ETE</b></h1>
+<hr style="width:30%; margin:0px;">
+<h2><b> O que é o Guia ETE?</b></h2>
+<p style="font-size:20px;">O Guia ETE é um projeto que foi criado e executado por alunos do 2 ano de Guia de Turismo, com o objetivo de por em prática a profissão de guia. Além disso, mostrar nossa escola para pessoas de fora. 
+Eles recebem os alunos de diversas escolas, e mostram  a escola inteira para os alunos, explicando sobre horários, regras e projetos. 
+<br><br>
+Se você quiser levar sua escola para a visitação, entre em contato com o telefone da escola e faça o agendamento de dia e horário de acordo com a disponibilidade de ambas as partes
+<ul class="ol">
+ <li><b><img width="30px" height="30px" src="_imagens\tele.png">Telefone: (81) 3181-3068 </b></li>
+ <li><b><img width="30px" height="30px" src="_imagens\email.png">E-mail: ETEJBL@gmail.com </b></li>
+</ul> </p>
+<hr style="width:30%;">
+<h2> <b>Importância das visitas aos pontos turísticos </b></h2>
+<p style="font-size:20px;">As visitas técnicas são de extrema importância pois estimulam a prática do que é aprendido em sala de aula.<br>
+Nas visitas os alunos tem a oportunidade de ver profissionais da área e conhecer mais sobre a profissão.</p>
+<hr style="width:30%;">
+<h2> <b>Como Funciona</b></h2>
+<p style="font-size:20px;">Os alunos são recebidos pelos guias no auditório da escola onde são recepcionados pelos guias, que falam um pouco sobre Jurandir Bezerra Lins. O gestor Claudivan fala um pouco sobre a escola e os coordenadores dos cursos de Guia de Turismo e Desenvolvimento de Sistemas, Emanuelle e Gibson falam sobre os cursos respectivamente. Depois os alunos conhecem a biblioteca, os laboratórios, secretaria, diretoria, refeitório e quadra. Durante o roteiro os guias explicam sobre monitoria, fardamento, horários, Programa Ganhe o Mundo e grêmio.</p>
+</div>
+<hr style="width:30%;"> <br> <br>
+</center>
+<center>
+<h2 align="center" style="font-family:Arial,Times New Romam; font-size:35px; border-radius:8px; background:blue; width:100%; color:white; border:2px solid black;" > Professores da Base Técnica de GT</h2>
+</center>
+<br>
+<div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>EMANUELLE SILVA </strong></p><br>
+      <a href="#demo24" data-toggle="collapse">
+	 <center>
+        <img src="_imagens/manu.JPG" class="img-circle person" alt="Manu" width="255" height="255">
+      </a>
+      <div id="demo24" class="collapse">
+        <br>
+		 <center>
+        <p>Coordenadora do curso de GT da ETE Jurandir Bezerra Lins</p>
+        <p>Membro da ETE desde 2018</p>
+		</center>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>ELYSIO ERNESTO</strong></p><br>
+      <a href="#demo25" data-toggle="collapse">
+      <center>
+        <img src="_imagens\_Professores/elisio.jpeg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo25" class="collapse">
+        <br>
+        <p>Professoror de Turismo da ETE Jurandir Bezerra Lins</p>
+        <p>Membro da ETE desde 2018</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>ROSEANE CARDOSO </strong></p><br>
+      <a href="#demo26" data-toggle="collapse">
+	  <center>
+        <img src="_imagens/_Professores/Roseane.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo26" class="collapse">
+        <br>
+        <p>Professora de Matemática do curso de GT da ETE Jurandir Bezerra Lins</p>
+        <p>Membro da ETE desde 2019</p>
+      </div>
+    </div>
+	</div>
+	<br>
+	 <div class="row">
+ <div class="col-sm-4">
+      <p class="text-center"><strong>MARIO TIMOTEO </strong></p><br>
+      <a href="#demo27" data-toggle="collapse">
+	 <center>
+        <img src="_imagens/_Professores/mario.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo27" class="collapse">
+        <br>
+		<center>
+        <p>Professor de Português do curso de GT da ETE Jurandir Bezerra Lins</p>
+        <p>Membro da ETE desde 2019</p>
+		</center>
+      </div>
+    </div>
+	    <div class="col-sm-4">
+      <p class="text-center"><strong>SABRINA OLIVEIRA </strong></p><br>
+      <a href="#demo28" data-toggle="collapse">
+	  <center>
+        <img src="_imagens/_Professores/sabrina.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo28" class="collapse">
+        <br>
+        <p>Professora de Inglês Aplicado a Turismo da ETE Jurandir Bezerra Lins</p>
+        <p>Membro da ETE desde 2018</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>SYMONNE MEDEIROS	</strong></p><br>
+      <a href="#demo29" data-toggle="collapse">
+      <center>
+        <img src="_imagens\_Professores\symone.png" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo29" class="collapse">
+        <br>
+        <p>Professorora da ETE Jurandir Bezerra Lins</p>
+        <p>Membro da ETE desde 2019</p>
+      </div>
+    </div>
+  </div>
+  <a id="subirTopo">
+  <br> subir
+</a>
+<br>
+<br>
+<br>
+   <div id="band" class="container-fluid" style="text-align: center; background-color: #A9A9A9">
+      <div class="row">
+        <div class="col-sm-4">
+          <h4>Telefone</h4>
+          <p> (81) 3181-3068</p>
+        </div>
+
+        <div class="col-sm-4">
+          <h4>Email</h4>
+          <p>ETEJBL@gmail.com</p>
+        </div>
+
+        <div class="col-sm-4">
+          <h4>Endereço</h4>
+          <p>BR 101 - Igarassu - PE</p>
+        </div>
+   </div>
+</div>
+
+</div>
+
+	<footer>
+   		<script type="js/jquery.js" type="text/javascript"></script>
+   	  <script type="js/min.js" type="text/javascript"></script>
+   </footer> 
+</body>
+</html>
